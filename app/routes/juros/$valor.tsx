@@ -29,7 +29,7 @@ export default function JurosValor () {
    <>
    <h1>Juros</h1>
    <table>
-    {data.calculos.map(calculo => (
+    {data.calculos.map((calculo : any) => (
         <tr>
            <td>{calculo.t}</td> 
            <td>R${calculo.m.toFixed(2)}</td>
