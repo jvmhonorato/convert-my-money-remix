@@ -1,5 +1,5 @@
 import { LoaderFunction } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 
 export const loader : LoaderFunction = () => {
   console.log("loader")
@@ -11,6 +11,7 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <p>UUID: {uuid}</p>
+      <Link to='/about-us'>Abolt us</Link>
     </div>
   );
 }
