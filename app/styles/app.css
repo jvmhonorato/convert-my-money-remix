@@ -513,8 +513,17 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .table {
   display: table;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .bg-slate-200 {

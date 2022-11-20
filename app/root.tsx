@@ -30,7 +30,10 @@ export default function App() {
       </head>
       <body>
       <Header/>
-        <Outlet />
+      <div className="max-w-4xl mx-auto">
+       <Outlet />
+      </div>
+        
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
