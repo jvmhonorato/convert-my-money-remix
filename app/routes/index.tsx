@@ -9,7 +9,8 @@ export const loader : LoaderFunction = () => {
 export default function Index() {
   const {uuid} = useLoaderData()
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
+    <div >
+      <h1 className="p-4 bg-slate-200">Welcome to Convert-my-money</h1>
       <p>UUID: {uuid}</p>
       <Link to='/about-us'>Abolt us</Link>
     </div>
