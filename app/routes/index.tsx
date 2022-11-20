@@ -7,6 +7,10 @@ export const loader : LoaderFunction = () => {
   return fetch('http://httpbin.org/uuid')
 }
 
+export const ErrorBoundary = () => {
+  return <h1 className="font-bold p-4 bg-red-200 px-4 my-2 rounded-md">Aconteceu um error</h1>
+}
+
 export default function Index() {
   const {uuid} = useLoaderData()
   return (
